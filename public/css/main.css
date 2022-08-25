@@ -33,6 +33,14 @@ body{
 .btn-menu-toggler{
     display: none;
 }
+.main-video{
+    width: 100%;
+    height:max-content;
+}
+#search{
+    position: absolute;
+    top: 90px;
+}
 /*Mobile version*/
 /*Navbar*/
 @media screen and (max-width: 576px) {
