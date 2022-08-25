@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;400&display=swap');
 body{
     margin: 0;
 }
@@ -8,7 +9,8 @@ body{
     display: flex;
     flex-direction: row;
     align-items: center;
-    box-shadow: rgba(102, 0, 102, 0.09) 0px 1px 2px;
+    justify-content: space-around;
+    box-shadow: rgba(102, 0, 102, 0.2) 0px 1px 2px;
 }
 .logo{
     margin: 0 35px;
@@ -23,8 +25,31 @@ body{
 .nav-item{
     margin: 0 15px;
 }
+.nav-link{
+    text-decoration: none;
+    font-family: 'Oswald', sans-serif;
+
+}
+.btn-menu-toggler{
+    display: none;
+}
 /*Mobile version*/
 /*Navbar*/
 @media screen and (max-width: 576px) {
-    
+    .btn-menu-toggler{
+        display: block;
+        width: 45px;
+        height: 30px;
+        font-size: 16px;
+        color: #660066;
+        background-color: #ead6f5;
+        border-color: #660066;
+        border-width: 1px;
+    }
+    .nav-links{
+        display: none;
+    }   
+    .main-navbar{
+        justify-content: space-around;
+    }
 }
