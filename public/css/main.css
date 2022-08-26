@@ -160,7 +160,7 @@ footer > *{
         border-width: 1px;
     }
     .nav-links{
-        display: none;
+        /* display: none; */
         color: #660066;
     }   
     .main-navbar{
