@@ -173,4 +173,7 @@ footer > *{
     .search-form{
         height: 30vh;
     }
+    .company {
+        width: 85px;
+    }
 }
