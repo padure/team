@@ -28,18 +28,87 @@ body{
 .nav-link{
     text-decoration: none;
     font-family: 'Oswald', sans-serif;
-
+    color: #660066;
 }
 .btn-menu-toggler{
     display: none;
 }
-.main-video{
-    width: 100%;
-    height:max-content;
+#app{
+    font-size: 0;
 }
-#search{
+.main-video{
     position: absolute;
     top: 90px;
+    width: 100%;
+    z-index: -2;
+}
+#search{
+    width: 55%;
+    padding: 15px;
+    font-size: 20px;
+    border-radius: 25px;
+    border-width: 1;
+}
+.search-form{
+    text-align: center;
+    height: 45vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.company{
+    display: flex;
+    flex-wrap: wrap;
+    width: 75%;
+    margin: auto;
+    padding: 5px;
+    background-color: white;
+}
+.company-card{
+    border: 1px solid #c69fc6;
+    flex: 1 1 calc(20em - 2px);
+    min-width: 180px;
+    margin: 5px;
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    text-decoration: none;
+    color: black;
+}
+.company-card > *{
+    font-size: 16px;
+    width: 100%;
+}
+.company-card > p{
+    font-size: 14px;
+}
+.company-card > img{
+    width: 100%;
+}
+.company-card > .title{
+    margin: 0;
+}
+.section-title{
+    font-size: 25px;
+    width: 100%;
+    text-align: center;
+    color: #660066;
+}
+.inregistrare{
+    height: calc(100vh - 240px);
+}
+/*Subsol*/
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+    background-color: black;
+    color: white;
+}
+footer > *{
+    padding: 0;
+    margin: 0;
 }
 /*Mobile version*/
 /*Navbar*/
@@ -56,8 +125,17 @@ body{
     }
     .nav-links{
         display: none;
+        color: #660066;
     }   
     .main-navbar{
         justify-content: space-around;
+    }
+    #search{
+        top: 30%;
+        width: 80%;
+        padding: 8px 15px;
+    }
+    .search-form{
+        height: 30vh;
     }
 }
