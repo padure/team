@@ -315,12 +315,12 @@ footer>* {
 @keyframes frunza1 {
     0% {
         top: -55px;
-        left: 90%;
+        left: 81%;
     }
 
     40% {
         transform: rotate(60deg);
-        left: 88%;
+        left: 78%;
     }
 
     60% {
@@ -330,7 +330,7 @@ footer>* {
 
     100% {
         transform: rotate(50deg);
-        left: 80%;
+        left: 74%;
         top: 120%;
         opacity: 0;
     }
