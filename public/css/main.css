@@ -368,4 +368,17 @@ footer > *{
     .comentarii > li{
         width: 70%;
     }
+    .reiting{
+        grid-auto-rows: min-content;
+    }
+    .voteaza{
+        justify-content: end;
+        margin-bottom: 50px;
+    }
+    .info{
+        flex-direction: column;
+    }
+    .brand{
+        height: 100px;
+    }
 }
