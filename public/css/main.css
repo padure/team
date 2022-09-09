@@ -359,6 +359,7 @@ footer > *{
     .serviciu .descriere-serviciu{
         width: 100%;
         font-size: 14px;
+        line-height: 2;
     }
     .serviciu a{
         font-size: 14px;
