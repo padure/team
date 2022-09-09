@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;400&display=swap');
-body{
+
+body {
     margin: 0;
 }
+
 /*Desktop version*/
 /*Navbar*/
-.main-navbar{
+.main-navbar {
     height: 90px;
     display: flex;
     flex-direction: row;
@@ -12,54 +14,65 @@ body{
     justify-content: space-around;
     box-shadow: rgba(102, 0, 102, 0.2) 0px 1px 2px;
 }
-.logo{
+
+.logo {
     margin: 0 35px;
 }
-.nav-links{
+
+.nav-links {
     list-style-type: none;
     display: flex;
     flex-wrap: wrap;
     width: max-content;
-    padding: 0;  
+    padding: 0;
 }
-.nav-item{
+
+.nav-item {
     margin: 0 15px;
 }
-.nav-link{
+
+.nav-link {
     text-decoration: none;
     font-family: 'Oswald', sans-serif;
     color: #660066;
 }
-.btn-menu-toggler{
+
+.btn-menu-toggler {
     display: none;
 }
-#app{
+
+#app {
     font-size: 0;
 }
-.main-video{
+
+.main-video {
     position: absolute;
     top: 90px;
     width: 100%;
     z-index: -2;
 }
-#search{
+
+#search {
     width: 55%;
     padding: 15px 25px;
     font-size: 18px;
     border-radius: 25px;
     border-width: 0;
 }
-#search::placeholder{
+
+#search::placeholder {
     color: #450145;
 }
-.search-form{
+
+.search-form {
     text-align: center;
     height: 45vh;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.company{
+
+.company {
     display: flex;
     flex-wrap: wrap;
     width: 75%;
@@ -68,7 +81,8 @@ body{
     padding: 5px;
     background-color: white;
 }
-.company-card{
+
+.company-card {
     border: 1px solid #c69fc6;
     flex: 1 1 calc(20em - 2px);
     min-width: 180px;
@@ -79,25 +93,31 @@ body{
     text-decoration: none;
     color: black;
 }
-.company-card:hover{
+
+.company-card:hover {
     box-shadow: rgba(102, 0, 102, 0.4) 0px 0px 5px;
     transition: 0.5s;
     background-color: #f7f3f9;
 }
-.company-card > *{
+
+.company-card>* {
     font-size: 16px;
     width: 100%;
 }
-.company-card > p{
+
+.company-card>p {
     font-size: 14px;
 }
-.company-card > img{
+
+.company-card>img {
     width: 100%;
 }
-.company-card > .title{
+
+.company-card>.title {
     margin: 0;
 }
-.section-title{
+
+.section-title {
     font-size: 25px;
     width: 100%;
     text-align: center;
@@ -105,7 +125,7 @@ body{
 }
 
 /*Subsol*/
-footer{
+footer {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -113,60 +133,72 @@ footer{
     background-color: black;
     color: white;
 }
-footer > *{
+
+footer>* {
     padding: 0;
     margin: 0;
 }
+
 /*Iregistrare*/
-.inregistrare{
+.inregistrare {
     height: calc(100vh - 240px);
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
 }
-.inregistrare > form{
+
+.inregistrare>form {
     display: flex;
     flex-wrap: wrap;
     width: 500px;
     margin: 0 25px;
     flex-direction: column;
 }
-.mb-3{
+
+.mb-3 {
     margin-bottom: 20px;
 }
-.mb-3 > *{
+
+.mb-3>* {
     box-sizing: border-box;
     width: 100%;
 }
-.mb-3 > input{
+
+.mb-3>input {
     padding: 5px;
 }
-.mb-3 > label{
+
+.mb-3>label {
     font-weight: bolder;
 }
-.inregistrare button{
+
+.inregistrare button {
     color: white;
     background-color: #660066;
     border-color: #660066;
     padding: 7px;
     cursor: pointer;
 }
-.reiting{
+
+.reiting {
     display: grid;
     grid-template-columns: auto auto auto auto auto;
 }
-.reiting h1{
+
+.reiting h1 {
     grid-column: 1 / 6;
 }
-.servicii{
+
+.servicii {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     width: 75%;
     margin: auto;
 }
-.info-logo{
+
+.info-logo {
     width: 140px;
     height: 140px;
     border-radius: 50%;
@@ -174,38 +206,194 @@ footer > *{
     position: relative;
     z-index: 2;
     bottom: 50px;
+    animation-name: rotate;
+    animation-duration: 4s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
-.info{
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    30% {
+        transform: rotate(360deg);
+    }
+
+    60% {
+        transform: rotate(360deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.frunze{
+    width: 55px;
+    position: absolute;
+    z-index: 0;
+    top: -100px;
+    opacity: 0.6;
+    animation-name: frunza;
+    animation-duration: 7s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+.frunze1{
+    width: 55px;
+    position: absolute;
+    z-index: 0;
+    top: -100px;
+    opacity: 0.6;
+    animation-name: frunza1;
+    animation-duration: 10s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+.frunze2{
+    width: 55px;
+    position: absolute;
+    z-index: 0;
+    top: -100px;
+    opacity: 0.6;
+    animation-name: frunza2;
+    animation-duration: 12s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+.frunze3{
+    width: 55px;
+    position: absolute;
+    z-index: 0;
+    top: -100px;
+    opacity: 0.7;
+    animation-name: frunza;
+    animation-duration: 8s;
+    animation-delay: 4s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+}
+.frunze4{
+    width: 55px;
+    position: absolute;
+    z-index: 0;
+    top: -100px;
+    opacity: 0.4;
+    animation-name: frunza1;
+    animation-duration: 15s;
+    animation-delay: 6s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes frunza {
+    0% {
+        top: -55px;
+        left: 50%;
+    }
+
+    30% {
+        transform: rotate(60deg);
+        left: 40%;
+    }
+
+    60% {
+        transform: rotate(360deg);
+    }
+
+    100% {
+        transform: rotate(50deg);
+        left: 70%;
+        top: 100%;
+        opacity: 0;
+    }
+}
+@keyframes frunza1 {
+    0% {
+        top: -55px;
+        left: 96%;
+    }
+
+    40% {
+        transform: rotate(60deg);
+        left: 90%;
+    }
+
+    60% {
+        transform: rotate(120deg);
+    }
+
+    100% {
+        transform: rotate(50deg);
+        left: 80%;
+        top: 120%;
+        opacity: 0;
+    }
+}
+@keyframes frunza2 {
+    0% {
+        top: -55px;
+        left: 10%;
+    }
+
+    30% {
+        transform: rotate(60deg);
+        left: 15%;
+    }
+
+    60% {
+        transform: rotate(360deg);
+    }
+
+    100% {
+        transform: rotate(50deg);
+        left: 10%;
+        top: 100%;
+        opacity: 0;
+    }
+}
+.info {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
-.reiting{
+
+.reiting {
     display: grid;
     grid-template-columns: auto auto auto auto auto;
     margin-left: 25px;
 }
-.reiting > h1{
+
+.reiting>h1 {
     margin: 0;
     grid-column: 1 / 6;
 }
-.reiting > i{
+
+.reiting>i {
     color: #ffc107;
 }
-.voteaza{
+
+.voteaza {
     display: flex;
     align-items: center;
 }
-.voteaza > i{
+
+.voteaza>i {
     color: #ffc107;
     cursor: pointer;
 }
-.brand{
+
+.brand {
     display: flex;
     flex-wrap: wrap;
     margin-left: 25px;
 }
-.head-img{
+
+.head-img {
     width: 100%;
     position: relative;
     top: 3px;
@@ -213,35 +401,43 @@ footer > *{
     height: 400px;
     object-fit: cover;
 }
-.lista-servicii{
+
+.lista-servicii {
     margin-bottom: 50px;
 }
-.serviciu img{
+
+.serviciu img {
     width: 100px;
     height: 80px;
     object-fit: cover;
 }
-.serviciu img:hover{
+
+.serviciu img:hover {
     box-shadow: rgba(102, 0, 102, 1) 0px 0px 2px;
 }
-.serviciu .titlu{
+
+.serviciu .titlu {
     width: 20%;
     padding: 0 5px;
     font-size: 18px;
 }
-.serviciu .descriere-serviciu{
+
+.serviciu .descriere-serviciu {
     width: 60%;
     font-weight: bold;
 }
+
 .serviciu a {
     text-decoration: none;
     width: 15%;
 }
-.serviciu a:hover{
+
+.serviciu a:hover {
     text-decoration: underline;
     color: #450145;
 }
-.serviciu{
+
+.serviciu {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -249,19 +445,18 @@ footer > *{
     margin-bottom: 25px;
     border-radius: 5px;
 }
-.serviciu:hover{
-    background-color:#f5f0f7;
+
+.serviciu:hover {
+    background-color: #f5f0f7;
     transition: 0.4s;
     box-shadow: rgba(102, 0, 102, 0.4) 0px 0px 4px;
 }
-.info-logo:hover{
-    transform: translate(-2.1rem, -2ex);
-    transition: 1s;
-}
-.form-comentariu{
+
+.form-comentariu {
     display: flex;
 }
-.form-comentariu > input{
+
+.form-comentariu>input {
     width: 100%;
     padding: 12px 20px;
     border-radius: 20px;
@@ -269,17 +464,20 @@ footer > *{
     background-color: #f5f0f7;
     margin-bottom: 30px;
 }
-.form-comentariu > input:focus{
+
+.form-comentariu>input:focus {
     outline: none;
 }
-.comentarii{
+
+.comentarii {
     list-style-type: none;
     padding: 0;
     display: flex;
     flex-direction: column;
     margin-bottom: 50px;
 }
-.comentarii > li{
+
+.comentarii>li {
     box-shadow: rgba(102, 0, 102, 0.2) 0px 0px 2px;
     padding: 10px 25px;
     width: 45%;
@@ -288,37 +486,45 @@ footer > *{
     background-color: #f5f0f7;
     font-size: 14px;
 }
-.nume-utilizator{
+
+.nume-utilizator {
     margin: 6px 0;
     font-size: 14px;
 }
-.data-comentariu{
+
+.data-comentariu {
     margin: 0;
     text-align: end;
     font-size: 13px;
 }
-.right{
+
+.right {
     align-self: end;
-    box-shadow: rgba(102, 0, 102, 0.5) 0px 0px 4px!important;
+    box-shadow: rgba(102, 0, 102, 0.5) 0px 0px 4px !important;
 }
-.voteaza span{
+
+.voteaza span {
     font-weight: bold;
     margin-right: 5px;
 }
+
 /*Mobile version*/
 @media screen and (max-width: 768px) {
-    .serviciu .descriere-serviciu{
+    .serviciu .descriere-serviciu {
         font-size: 12px;
     }
-    .serviciu .titlu{
+
+    .serviciu .titlu {
         font-size: 12px;
     }
-    .serviciu a{
+
+    .serviciu a {
         font-size: 12px;
     }
 }
+
 @media screen and (max-width: 576px) {
-    .btn-menu-toggler{
+    .btn-menu-toggler {
         display: block;
         width: 45px;
         height: 30px;
@@ -328,63 +534,79 @@ footer > *{
         border-color: #660066;
         border-width: 1px;
     }
-    .nav-links{
+
+    .nav-links {
         color: #660066;
-    }   
-    .main-navbar{
+    }
+
+    .main-navbar {
         justify-content: space-around;
     }
-    #search{
+
+    #search {
         top: 30%;
         width: 80%;
         padding: 8px 15px;
     }
-    .search-form{
+
+    .search-form {
         height: 30vh;
     }
+
     .company {
         width: 85%;
     }
-    .serviciu{
+
+    .serviciu {
         flex-direction: column;
         padding: 10px;
     }
-    .servicii{
+
+    .servicii {
         width: 95%;
     }
-    .serviciu img{
+
+    .serviciu img {
         width: 100%;
         height: auto;
     }
-    .serviciu .titlu{
+
+    .serviciu .titlu {
         width: 100%;
         text-align: center;
         font-size: 14px;
     }
-    .serviciu .descriere-serviciu{
+
+    .serviciu .descriere-serviciu {
         width: 100%;
         font-size: 14px;
         line-height: 2;
     }
-    .serviciu a{
+
+    .serviciu a {
         font-size: 14px;
         width: 100%;
         text-align: end;
     }
-    .comentarii > li{
+
+    .comentarii>li {
         width: 70%;
     }
-    .reiting{
+
+    .reiting {
         grid-auto-rows: min-content;
     }
-    .voteaza{
+
+    .voteaza {
         justify-content: end;
         margin-bottom: 50px;
     }
-    .info{
+
+    .info {
         flex-direction: column;
     }
-    .brand{
+
+    .brand {
         height: 100px;
     }
 }
