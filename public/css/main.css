@@ -198,6 +198,7 @@ footer > *{
 }
 .voteaza > i{
     color: #ffc107;
+    cursor: pointer;
 }
 .brand{
     display: flex;
@@ -299,6 +300,10 @@ footer > *{
 .right{
     align-self: end;
     box-shadow: rgba(102, 0, 102, 0.5) 0px 0px 4px!important;
+}
+.voteaza span{
+    font-weight: bold;
+    margin-right: 5px;
 }
 /*Mobile version*/
 @media screen and (max-width: 768px) {
