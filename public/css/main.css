@@ -232,7 +232,7 @@ footer>* {
 }
 
 .frunze{
-    width: 55px;
+    width: 85px;
     position: absolute;
     z-index: 0;
     top: -100px;
@@ -243,7 +243,7 @@ footer>* {
     animation-iteration-count: infinite;
 }
 .frunze1{
-    width: 55px;
+    width: 45px;
     position: absolute;
     z-index: 0;
     top: -100px;
@@ -265,7 +265,7 @@ footer>* {
     animation-iteration-count: infinite;
 }
 .frunze3{
-    width: 55px;
+    width: 65px;
     position: absolute;
     z-index: 0;
     top: -100px;
@@ -324,7 +324,7 @@ footer>* {
     }
 
     60% {
-        transform: rotate(120deg);
+        transform: rotate(-120deg);
         opacity: 0.6;
     }
 
