@@ -280,19 +280,21 @@ footer > *{
 }
 .comentarii > li{
     box-shadow: rgba(102, 0, 102, 0.2) 0px 0px 2px;
-    padding: 15px;
+    padding: 10px 25px;
     width: 45%;
-    border-radius: 30px;
+    border-radius: 20px;
     margin-bottom: 25px;
     background-color: #f5f0f7;
+    font-size: 14px;
 }
 .nume-utilizator{
     margin: 6px 0;
+    font-size: 14px;
 }
 .data-comentariu{
     margin: 0;
     text-align: end;
-    font-size: 14px;
+    font-size: 13px;
 }
 .right{
     align-self: end;
