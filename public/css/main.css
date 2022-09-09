@@ -64,6 +64,7 @@ body{
     flex-wrap: wrap;
     width: 75%;
     margin: auto;
+    margin-bottom: 100px;
     padding: 5px;
     background-color: white;
 }
@@ -77,6 +78,11 @@ body{
     flex-wrap: wrap;
     text-decoration: none;
     color: black;
+}
+.company-card:hover{
+    box-shadow: rgba(102, 0, 102, 0.4) 0px 0px 5px;
+    transition: 0.5s;
+    background-color: #f7f3f9;
 }
 .company-card > *{
     font-size: 16px;
@@ -146,8 +152,164 @@ footer > *{
     padding: 7px;
     cursor: pointer;
 }
+.reiting{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+}
+.reiting h1{
+    grid-column: 1 / 6;
+}
+.servicii{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 75%;
+    margin: auto;
+}
+.info-logo{
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    border: 5px solid white;
+    position: relative;
+    z-index: 2;
+    bottom: 50px;
+}
+.info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.reiting{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    margin-left: 25px;
+}
+.reiting > h1{
+    margin: 0;
+    grid-column: 1 / 6;
+}
+.reiting > i{
+    color: #ffc107;
+}
+.voteaza{
+    display: flex;
+    align-items: center;
+}
+.voteaza > i{
+    color: #ffc107;
+}
+.brand{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 25px;
+}
+.head-img{
+    width: 100%;
+    position: relative;
+    top: 3px;
+    border-radius: 15px;
+    height: 400px;
+    object-fit: cover;
+}
+.lista-servicii{
+    margin-bottom: 50px;
+}
+.serviciu img{
+    width: 100px;
+    height: 80px;
+    object-fit: cover;
+}
+.serviciu img:hover{
+    box-shadow: rgba(102, 0, 102, 1) 0px 0px 2px;
+}
+.serviciu .titlu{
+    width: 20%;
+    padding: 0 5px;
+    font-size: 18px;
+}
+.serviciu .descriere-serviciu{
+    width: 60%;
+    font-weight: bold;
+}
+.serviciu a {
+    text-decoration: none;
+    width: 15%;
+}
+.serviciu a:hover{
+    text-decoration: underline;
+    color: #450145;
+}
+.serviciu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: rgba(102, 0, 102, 0.2) 0px 0px 2px;
+    margin-bottom: 25px;
+    border-radius: 5px;
+}
+.serviciu:hover{
+    background-color:#f5f0f7;
+    transition: 0.4s;
+    box-shadow: rgba(102, 0, 102, 0.4) 0px 0px 4px;
+}
+.info-logo:hover{
+    transform: translate(-2.1rem, -2ex);
+    transition: 1s;
+}
+.form-comentariu{
+    display: flex;
+}
+.form-comentariu > input{
+    width: 100%;
+    padding: 12px 20px;
+    border-radius: 20px;
+    border-width: 0;
+    background-color: #f5f0f7;
+    margin-bottom: 30px;
+}
+.form-comentariu > input:focus{
+    outline: none;
+}
+.comentarii{
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+.comentarii > li{
+    box-shadow: rgba(102, 0, 102, 0.2) 0px 0px 2px;
+    padding: 15px;
+    width: 45%;
+    border-radius: 30px;
+    margin-bottom: 25px;
+    background-color: #f5f0f7;
+}
+.nume-utilizator{
+    margin: 6px 0;
+}
+.data-comentariu{
+    margin: 0;
+    text-align: end;
+    font-size: 14px;
+}
+.right{
+    align-self: end;
+    box-shadow: rgba(102, 0, 102, 0.5) 0px 0px 4px!important;
+}
 /*Mobile version*/
-/*Navbar*/
+@media screen and (max-width: 768px) {
+    .serviciu .descriere-serviciu{
+        font-size: 12px;
+    }
+    .serviciu .titlu{
+        font-size: 12px;
+    }
+    .serviciu a{
+        font-size: 12px;
+    }
+}
 @media screen and (max-width: 576px) {
     .btn-menu-toggler{
         display: block;
@@ -175,5 +337,33 @@ footer > *{
     }
     .company {
         width: 85%;
+    }
+    .serviciu{
+        flex-direction: column;
+        padding: 10px;
+    }
+    .servicii{
+        width: 95%;
+    }
+    .serviciu img{
+        width: 100%;
+        height: auto;
+    }
+    .serviciu .titlu{
+        width: 100%;
+        text-align: center;
+        font-size: 14px;
+    }
+    .serviciu .descriere-serviciu{
+        width: 100%;
+        font-size: 14px;
+    }
+    .serviciu a{
+        font-size: 14px;
+        width: 100%;
+        text-align: end;
+    }
+    .comentarii > li{
+        width: 70%;
     }
 }
