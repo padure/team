@@ -325,6 +325,7 @@ footer>* {
 
     60% {
         transform: rotate(120deg);
+        opacity: 0.6;
     }
 
     100% {
